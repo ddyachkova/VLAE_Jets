@@ -49,6 +49,8 @@ elif args.dataset == 'celebA':
     dataset = CelebADataset(db_path=args.db_path)
 elif args.dataset == 'svhn':
     dataset = SVHNDataset(db_path=args.db_path)
+elif args.dataset == 'jets':
+    dataset = JetsDataset()
 else:
     print("Unknown dataset")
     exit(-1)

@@ -63,6 +63,16 @@ class VLadder(Network):
             self.error_scale = 8.0
             layers = SmallLayers(self)
             self.do_generate_manifold_samples = True
+        elif self.name == "vladder_jets":
+            self.cs = [1, 64, 128, 1024]
+            self.ladder0_dim = 2
+            self.ladder1_dim = 2
+            self.ladder2_dim = 2
+            self.num_layers = 3
+            loss_ratio = 8.0
+            self.error_scale = 8.0
+            layers = SmallLayers(self)
+            self.do_generate_manifold_samples = True
         else:
             print("Unknown architecture name %s" % self.name)
             exit(-1)

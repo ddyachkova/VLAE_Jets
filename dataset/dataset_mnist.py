@@ -1,5 +1,5 @@
 from dataset import *
-from tensorflow.examples.tutorials.mnist import input_data
+# from tensorflow.examples.tutorials.mnist import input_data
 import numpy as np
 import os
 from matplotlib import pyplot as plt
